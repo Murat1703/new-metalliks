@@ -86,6 +86,7 @@ let showModalButtons = document.querySelectorAll('.__open-modal')
 
 for (let n = 0; n<showModalButtons.length; n++ ){
     showModalButtons[n].addEventListener('click', ()=>{
+        console.log('click');
         modal.classList.add('__show-modal');
     })
 }
@@ -97,8 +98,9 @@ span.onclick = function() {
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+window.addEventListener('click', e => {
+    const target = e.target;
+  if ((!target.closest('.modal-content'))&&(target.closest('.modal'))) {
+    modal.classList.remove('__show-modal');
   }
-}
+})
