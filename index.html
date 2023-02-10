@@ -20,7 +20,7 @@
 </head>
 <body>
     
-    <header class="header">
+    <header class="header" id="main-header">
         <div class="header-inner container">
            <div class="logo">ТОО METALLIKS</div>
            <nav class="nav-menu">
@@ -60,7 +60,7 @@
                         <p>Гарантия на выполненые работы</p>
                     </div>
                     <div class="main-buttons">
-                        <a href="" class="main-btn">Подробнее</a>
+                        <a href="javascript:void(0)" class="main-btn __open-modal">Подробнее</a>
                         <a href="" class="main-btn __white-btn">Свяжитесь с нами</a>
                     </div>
                     <div class="slider-navigation">
@@ -209,7 +209,7 @@
                     <div class="service-card-line"></div>
                     <div class="service-card-desc">Планировка участка. Корчевка деревьев, удаление плодородного слоя
                     </div>
-                    <a href="" class="main-btn">Заказать услугу</a>
+                    <a href="javascript:void(0)" class="main-btn __open-modal">Заказать услугу</a>
                 </div>
                 <div class="service-card-item">
                     <img src="img/service-cards/podgotovitelnye-raboty.webp" alt="" class="service-card-img">
@@ -217,7 +217,7 @@
                     <div class="service-card-line"></div>
                     <div class="service-card-desc">Планировка участка. Корчевка деревьев, удаление плодородного слоя
                     </div>
-                    <a href="" class="main-btn">Заказать услугу</a>
+                    <a href="javascript:void(0)" class="main-btn __open-modal">Заказать услугу</a>
                 </div>
                 <div class="service-card-item">
                     <img src="img/service-cards/fundamentnie-raboty.webp" alt="" class="service-card-img">
@@ -226,7 +226,7 @@
                     <div class="service-card-line"></div>
                     <div class="service-card-desc">Геодезические работы, котлованы, коммуникации. Фундаменты на винтовых сваях
                     </div>
-                    <a href="" class="main-btn">Заказать услугу</a>
+                    <a href="javascript:void(0)" class="main-btn __open-modal">Заказать услугу</a>
                 </div>
                 <div class="service-card-item">
                     <img src="img/service-cards/stroytelniye-raboty.webp" alt="" class="service-card-img">
@@ -234,7 +234,7 @@
                     <div class="service-card-line"></div>
                     <div class="service-card-desc">Стеновые конструкции, кирпич, бетон, газоблок
                     </div>
-                    <a href="" class="main-btn">Заказать услугу</a>
+                    <a href="javascript:void(0)" class="main-btn __open-modal">Заказать услугу</a>
                 </div>
                 <div class="service-card-item">
                     <img src="img/service-cards/krovelnye-raboty.webp" alt="" class="service-card-img">
@@ -244,7 +244,7 @@
                     <div class="service-card-desc">Обрешетка, пароизоляция, гидроизоляция
 
                     </div>
-                    <a href="" class="main-btn">Заказать услугу</a>
+                    <a href="javascript:void(0)" class="main-btn __open-modal">Заказать услугу</a>
                 </div>
                 <div class="service-card-item">
                     <img src="img/service-cards/fasadnye-raboty.webp" alt="" class="service-card-img">
@@ -253,7 +253,7 @@
                     <div class="service-card-line"></div>
                     <div class="service-card-desc">Сайдинг,  монтаж вентилируемых фасадов
                     </div>
-                    <a href="" class="main-btn">Заказать услугу</a>
+                    <a href="javascript:void(0)" class="main-btn __open-modal">Заказать услугу</a>
                 </div>
 
             </div>
@@ -389,6 +389,51 @@
         </div>
     </section>
 
+    <footer class="footer">
+        <div class="footer-inner container">
+            <div class="footer-content">
+                <p class="footer-company">Поддержка. <a href="https://trueservice.kz/">Разработка сайтов в TrueService.kz</a></p>
+                <p class="copyright">©2023 ТОО METALLIKS</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="feedback">
+        <div class="feedback-content">
+            <img src="img/phone-icon-feedback.svg" alt="feedback" class="feedback-phone">
+        </div>
+        <div class="feedback-content __whatsapp">
+            <img src="img/whatsapp-icon.svg" alt="feedback" class="feedback-phone">
+        </div>
+    </div>
+
+    <a href="#main-header" class="gotoTop">
+        <img src="img/arrow-up.svg" alt="arrow-up">
+    </a>
+
+    
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="closeBtn">&times;</span>
+        <div class="contacts-form">
+            <div class="contacts-form-title">Оставить заявку</div>
+            <div class="service-card-line"></div>
+            <form action="">
+                <div class="div-input">
+                    <img src="img/user-icon.svg" alt="" class="input-icon">
+                    <input type="text" placeholder="Ваше имя *" class="inp-data">
+                </div>                        
+                <div class="div-input">
+                    <img src="img/phone-icon.svg" alt="" class="input-icon">
+                    <input type="text" placeholder="Ваш телефон *" class="inp-data">
+                </div>
+                <p class="agreement">Вводя свои данные вы даете согласие на обработку данных</p>
+                <input type="submit" value="Отправить" class="main-btn __submit-btn">
+            </form>
+        </div>
+      </div>
+    </div>
+    
 
 
 </body>

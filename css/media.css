@@ -70,6 +70,10 @@
     .warranty img{
         width: 50px;
     }
+    .main-buttons{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width: 450px){
@@ -81,5 +85,10 @@
     }
     .main-title{
         font-size: 35px;
+    }
+    .footer-content{
+        display: flex;
+        gap: 0;
+        flex-wrap: wrap;
     }
 }
