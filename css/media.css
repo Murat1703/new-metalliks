@@ -58,6 +58,18 @@
     .service-cards{
         grid-template-columns: auto;
     }
+    .main-subtitle{
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+    .warranty p{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .warranty img{
+        width: 50px;
+    }
 }
 
 @media (max-width: 450px){
@@ -66,5 +78,8 @@
     }
     .__services-btn{
         display: none;
+    }
+    .main-title{
+        font-size: 35px;
     }
 }
